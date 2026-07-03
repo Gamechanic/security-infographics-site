@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NIST AI Risk Management Framework (AI RMF)</title>
+<link rel="stylesheet" href="poster.css">
+</head>
+<body>
+<div class="back-bar"><a href="index.html">← Gallery</a></div>
+<div class="dl-bar">⬇ <a href="nist-ai-rmf-poster.gif" download>GIF</a> · <a href="nist-ai-rmf-poster.png" download>PNG</a></div>
+<div class="poster">
+
+  <!-- ================= MASTHEAD ================= -->
+  <div class="kicker">Security · field guide</div>
+  <h1>NIST AI <span class="b">RMF</span></h1>
+  <div class="sub">The voluntary framework for managing AI risk across the whole <b>lifecycle</b> — toward trustworthy AI <span class="dim">(AI RMF 1.0 · NIST AI 100-1 · Jan 2023 — a framework, not a checklist)</span></div>
+  <div class="byline">
+    <div class="brandmark"><span class="logo">CTF</span> Farooq&nbsp;Ali</div>
+    <div class="who">· security explainer series</div>
+    <div class="badge">v2026.06</div>
+  </div>
+
+  <div class="grid">
+
+    <!-- 01 WHAT IT IS -->
+    <div class="card c-blue">
+      <div class="chead"><div class="num">01</div><div class="ctitle">What it is</div></div>
+      <p>The <b>NIST AI Risk Management Framework</b> (AI RMF 1.0, <b>NIST AI 100-1</b>, Jan 2023) — <b>voluntary</b> guidance to identify, assess &amp; manage AI risk across the entire lifecycle, from design to deployment to retirement.</p>
+      <p style="margin-top:7px"><span class="em">A framework, not a checklist — it shapes how you think about AI risk, it doesn't hand you a pass/fail list.</span></p>
+    </div>
+
+    <!-- 02 WHY IT EXISTS -->
+    <div class="card c-teal">
+      <div class="chead"><div class="num">02</div><div class="ctitle">Why it exists</div></div>
+      <div class="gotchas">
+        <div class="gx"><span class="ic">🎯</span><div><b>Risk is contextual</b> <span>— the same model can be low-risk in one use and high-risk in another.</span></div></div>
+        <div class="gx"><span class="ic">🔁</span><div><b>Risk is continuous</b> <span>— AI drifts; risk must be managed across the whole lifecycle, not once.</span></div></div>
+      </div>
+      <p style="margin-top:8px"><span class="dim" style="color:#8c8c8c">Voluntary &amp; rights-preserving — usable by any org, any sector, any size.</span></p>
+    </div>
+
+    <!-- 03 THE FOUR CORE FUNCTIONS — HERO -->
+    <div class="card span2 c-gold">
+      <div class="chead"><div class="num">03</div><div class="ctitle">The four core functions <span class="t2">— <b>GOVERN</b> wraps the cycle of <b>MAP → MEASURE → MANAGE</b></span></div></div>
+      <svg viewBox="0 0 1000 250" width="100%" style="display:block">
+        <!-- GOVERN outer ring -->
+        <rect x="30" y="20" width="940" height="210" rx="18" fill="#1a1305" stroke="#E9BF35" stroke-width="1.6"/>
+        <text x="50" y="44" fill="#E9BF35" font-size="14" font-weight="800" font-family="Century Gothic, sans-serif">GOVERN — culture · policy · roles · accountability (cross-cutting, wraps the others)</text>
+
+        <!-- travelling dot around the inner cycle -->
+        <path id="rmfCycle" d="M 300,150 L 500,150 L 700,150" fill="none" stroke="none"/>
+        <circle r="6" fill="#E9BF35" opacity=".28"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#rmfCycle"/></animateMotion></circle>
+        <circle r="3.4" fill="#fff"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#rmfCycle"/></animateMotion></circle>
+
+        <line x1="300" y1="150" x2="700" y2="150" stroke="#2b2b2b" stroke-width="2"/>
+
+        <g font-family="Century Gothic, sans-serif">
+          <!-- MAP -->
+          <g><circle class="tlDot" cx="300" cy="150" r="8" fill="#5AA9EC" style="animation-delay:0s"/>
+            <text x="300" y="108" text-anchor="middle" fill="#5AA9EC" font-size="15" font-weight="800">MAP</text>
+            <text x="300" y="180" text-anchor="middle" fill="#bdbdbd" font-size="11">context + risks</text>
+            <text x="300" y="196" text-anchor="middle" fill="#8c8c8c" font-size="10">who · where · what could go wrong</text></g>
+          <!-- MEASURE -->
+          <g><circle class="tlDot" cx="500" cy="150" r="8" fill="#3AD0B0" style="animation-delay:.9s"/>
+            <text x="500" y="108" text-anchor="middle" fill="#3AD0B0" font-size="15" font-weight="800">MEASURE</text>
+            <text x="500" y="180" text-anchor="middle" fill="#bdbdbd" font-size="11">analyze + TEST</text>
+            <text x="500" y="196" text-anchor="middle" fill="#8c8c8c" font-size="10">evaluations · red-teaming · monitoring</text></g>
+          <!-- MANAGE -->
+          <g><circle class="tlDot" cx="700" cy="150" r="8" fill="#FE9A3A" style="animation-delay:1.8s"/>
+            <text x="700" y="108" text-anchor="middle" fill="#FE9A3A" font-size="15" font-weight="800">MANAGE</text>
+            <text x="700" y="180" text-anchor="middle" fill="#bdbdbd" font-size="11">prioritize · respond · monitor</text>
+            <text x="700" y="196" text-anchor="middle" fill="#8c8c8c" font-size="10">act on what MEASURE surfaced</text></g>
+        </g>
+      </svg>
+      <p style="margin-top:6px" class="lead"><b>Govern</b> is the culture &amp; accountability layer that surrounds and feeds the ongoing loop of <b>Map</b> (frame the risk), <b>Measure</b> (test it), and <b>Manage</b> (respond to it).</p>
+    </div>
+
+    <!-- 04 TRUSTWORTHY-AI CHARACTERISTICS -->
+    <div class="card span2 c-purple">
+      <div class="chead"><div class="num">04</div><div class="ctitle">What "trustworthy" means <span class="t2">— the characteristics the framework targets</span></div></div>
+      <div class="chips">
+        <span class="chip">valid &amp; reliable</span>
+        <span class="chip">safe</span>
+        <span class="chip">secure &amp; resilient</span>
+        <span class="chip">accountable &amp; transparent</span>
+        <span class="chip">explainable &amp; interpretable</span>
+        <span class="chip">privacy-enhanced</span>
+        <span class="chip">fair — bias managed</span>
+      </div>
+      <p style="margin-top:9px"><span class="em">Valid &amp; reliable is foundational — the rest are the qualities you trade off and balance in context.</span></p>
+    </div>
+
+    <!-- 05 GOVERN IS THE FOUNDATION -->
+    <div class="card c-red">
+      <div class="chead"><div class="num">05</div><div class="ctitle">Govern is the foundation</div></div>
+      <p style="margin-bottom:7px">Without governance — an <b>AI inventory</b>, <b>policy</b>, and clear <b>ownership</b> — the other three functions don't stick.</p>
+      <div class="steps">
+        <span class="step" style="border-color:#3a1414;color:#FF5A4D">inventory</span><span class="arrow">→</span>
+        <span class="step" style="border-color:#3a1414;color:#FF5A4D">policy</span><span class="arrow">→</span>
+        <span class="step" style="border-color:#3a1414;color:#FF5A4D">ownership</span>
+      </div>
+      <p style="margin-top:9px"><span class="em">Culture is the hard part — and the part everything else rests on.</span></p>
+    </div>
+
+    <!-- 06 MEASURE = WHERE TESTING LIVES -->
+    <div class="card c-teal">
+      <div class="chead"><div class="num">06</div><div class="ctitle">Measure = where testing lives</div></div>
+      <p style="margin-bottom:7px">The <b>Measure</b> function is where you prove — not assume — that risk is controlled:</p>
+      <div class="chips">
+        <span class="chip">evaluations</span><span class="chip">adversarial testing</span><span class="chip">red-teaming</span><span class="chip">drift monitoring</span>
+      </div>
+      <p style="margin-top:9px"><span class="em">Each metric needs a threshold and an owner — otherwise it's measurement theater.</span></p>
+    </div>
+
+    <!-- 07 THE GENAI PROFILE -->
+    <div class="card span2 c-orange">
+      <div class="chead"><div class="num">07</div><div class="ctitle">The Generative AI Profile <span class="t2">— <b>NIST AI 600-1</b> · July 2024 · the GenAI companion</span></div></div>
+      <svg viewBox="0 0 1000 128" width="100%" style="display:block">
+        <text x="20" y="15" fill="#FE9A3A" font-size="11" font-weight="700" font-family="Century Gothic, sans-serif">AI 600-1 — 12 GenAI-specific risks</text>
+        <text x="960" y="15" text-anchor="end" fill="#E9BF35" font-size="11" font-weight="700" font-family="Century Gothic, sans-serif">mapped back to the four functions</text>
+        <g font-family="Century Gothic, sans-serif" font-size="11" font-weight="700">
+          <rect x="20" y="30" width="360" height="72" rx="9" fill="#0c0c0c" stroke="#FE9A3A"/>
+          <text x="200" y="55" text-anchor="middle" fill="#FE9A3A" font-size="12">12 GenAI risks</text>
+          <text x="200" y="74" text-anchor="middle" fill="#bdbdbd" font-size="10">e.g. hallucination · data leakage</text>
+          <text x="200" y="90" text-anchor="middle" fill="#8c8c8c" font-size="9.5">CBRN · harmful bias · provenance</text>
+
+          <line x1="380" y1="66" x2="640" y2="66" stroke="#2b2b2b" stroke-width="1.3"/>
+          <path id="genaiMap" d="M380,66 L640,66" fill="none" stroke="none"/>
+          <circle r="3.4" fill="#FE9A3A"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#genaiMap"/></animateMotion></circle>
+          <text x="510" y="58" text-anchor="middle" fill="#8c8c8c" font-size="9.5">suggested actions →</text>
+
+          <rect x="640" y="30" width="340" height="16" rx="5" fill="#1a1305" stroke="#E9BF35"/><text x="810" y="42" text-anchor="middle" fill="#E9BF35" font-size="10">GOVERN</text>
+          <rect x="640" y="48" width="340" height="16" rx="5" fill="#0b1220" stroke="#5AA9EC"/><text x="810" y="60" text-anchor="middle" fill="#5AA9EC" font-size="10">MAP</text>
+          <rect x="640" y="66" width="340" height="16" rx="5" fill="#0a1512" stroke="#3AD0B0"/><text x="810" y="78" text-anchor="middle" fill="#3AD0B0" font-size="10">MEASURE</text>
+          <rect x="640" y="84" width="340" height="16" rx="5" fill="#1a0f04" stroke="#FE9A3A"/><text x="810" y="96" text-anchor="middle" fill="#FE9A3A" font-size="10">MANAGE</text>
+        </g>
+      </svg>
+      <p style="margin-top:6px" class="lead">A companion <span class="em">profile</span> — not a new framework. It names the risks unique to generative AI and points to concrete actions under each of the four functions.</p>
+    </div>
+
+    <!-- 08 HOW TO ADOPT -->
+    <div class="card span2 c-blue">
+      <div class="chead"><div class="num">08</div><div class="ctitle">How to adopt it <span class="t2">— start with Govern, then run the loop</span></div></div>
+      <svg viewBox="0 0 1000 96" width="100%" style="display:block">
+        <line x1="90" y1="52" x2="910" y2="52" stroke="#2b2b2b" stroke-width="2"/>
+        <path id="rmfAdopt" d="M90,52 L910,52" fill="none" stroke="none"/>
+        <circle r="6" fill="#E9BF35" opacity=".28"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#rmfAdopt"/></animateMotion></circle>
+        <circle r="3.4" fill="#fff"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#rmfAdopt"/></animateMotion></circle>
+        <g font-family="Century Gothic, sans-serif">
+          <g><circle class="tlDot" cx="130" cy="52" r="6" fill="#E9BF35" style="animation-delay:0s"/>
+            <text x="130" y="34" text-anchor="middle" fill="#E9BF35" font-size="12" font-weight="800">1 · Govern</text>
+            <text x="130" y="76" text-anchor="middle" fill="#8c8c8c" font-size="9.5">policy + AI inventory</text></g>
+          <g><circle class="tlDot" cx="360" cy="52" r="6" fill="#5AA9EC" style="animation-delay:.6s"/>
+            <text x="360" y="34" text-anchor="middle" fill="#5AA9EC" font-size="12" font-weight="800">2 · Map</text>
+            <text x="360" y="76" text-anchor="middle" fill="#8c8c8c" font-size="9.5">frame context &amp; risks</text></g>
+          <g><circle class="tlDot" cx="590" cy="52" r="6" fill="#3AD0B0" style="animation-delay:1.2s"/>
+            <text x="590" y="34" text-anchor="middle" fill="#3AD0B0" font-size="12" font-weight="800">3 · Measure</text>
+            <text x="590" y="76" text-anchor="middle" fill="#8c8c8c" font-size="9.5">test the controls</text></g>
+          <g><circle class="tlDot" cx="870" cy="52" r="6" fill="#FE9A3A" style="animation-delay:1.8s"/>
+            <text x="870" y="34" text-anchor="middle" fill="#FE9A3A" font-size="12" font-weight="800">4 · Manage</text>
+            <text x="870" y="76" text-anchor="middle" fill="#8c8c8c" font-size="9.5">incidents &amp; drift</text></g>
+        </g>
+      </svg>
+      <p style="margin-top:6px"><span class="em">Then iterate — it's a loop, not a launch. Re-map and re-measure as the system and its context change.</span></p>
+    </div>
+
+    <!-- 09 WHERE IT FITS -->
+    <div class="card c-green">
+      <div class="chead"><div class="num">09</div><div class="ctitle">Where it fits</div></div>
+      <table>
+        <tr><th>Instrument</th><th>What it is</th></tr>
+        <tr><td class="k">NIST AI RMF</td><td class="win">Voluntary risk backbone</td></tr>
+        <tr><td class="k">ISO/IEC 42001</td><td>Certifiable mgmt system</td></tr>
+        <tr><td class="k">EU AI Act</td><td>Law — binding rules</td></tr>
+      </table>
+      <p style="margin-top:8px"><span class="dim" style="color:#8c8c8c">The RMF complements the other two — it's the shared risk language underneath them.</span></p>
+    </div>
+
+    <!-- 10 WATCH OUT -->
+    <div class="card c-red">
+      <div class="chead"><div class="num">10</div><div class="ctitle">Watch out</div></div>
+      <div class="gotchas">
+        <div class="gx"><span class="ic">📋</span><div><b>Reading it as a control list</b> <span>— it's a framework; it guides thinking, it doesn't grade you.</span></div></div>
+        <div class="gx"><span class="ic">🏛️</span><div><b>Skipping Govern</b> <span>— culture is the hard part, and the rest won't stick without it.</span></div></div>
+        <div class="gx"><span class="ic">🤖</span><div><b>GenAI without 600-1</b> <span>— generative AI needs the companion profile, not RMF 1.0 alone.</span></div></div>
+        <div class="gx"><span class="ic">🎭</span><div><b>Metrics without owners</b> <span>— measurement with no thresholds or owners is theater.</span></div></div>
+      </div>
+    </div>
+
+    <!-- 11 TAKEAWAY -->
+    <div class="card span2 takeaway c-gold">
+      <div class="chead"><div class="num">11</div><div class="ctitle">The takeaway</div></div>
+      <div class="big">The NIST AI RMF is a <span class="em">repeatable loop</span> — <b>Govern</b> the culture, then <b>Map · Measure · Manage</b> the risk — to build <span class="em">trustworthy AI, GenAI included</span>.</div>
+      <div class="flow2">
+        <span class="step">Govern</span><span class="arrow">→</span>
+        <span class="step">Map</span><span class="arrow">→</span>
+        <span class="step">Measure</span><span class="arrow">→</span>
+        <span class="step">Manage</span><span class="arrow">↺</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="foot">
+    <div class="brandmark" style="font-size:13px"><span class="logo" style="width:22px;height:22px;font-size:11px;border-radius:5px">CTF</span> Farooq&nbsp;Ali</div>
+    <div class="sig" style="margin-left:auto"><a href="https://ctf.guru" style="color:var(--gold);text-decoration:none;font-weight:700">ctf.guru</a> · security explainer series · 2026</div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-SPM — AI Security Posture Management</title>
+<link rel="stylesheet" href="poster.css">
+</head>
+<body>
+<div class="back-bar"><a href="index.html">← Gallery</a></div>
+<div class="dl-bar">⬇ <a href="ai-spm-poster.gif" download>GIF</a> · <a href="ai-spm-poster.png" download>PNG</a></div>
+<div class="poster">
+
+  <!-- ================= MASTHEAD ================= -->
+  <div class="kicker">Security · field guide</div>
+  <h1>AI<span class="b">-SPM</span></h1>
+  <div class="sub">Continuous <b>visibility</b> and risk management for your AI attack surface <span class="dim">(the CSPM / DSPM idea, applied to AI — you can't secure what you can't see)</span></div>
+  <div class="byline">
+    <div class="brandmark"><span class="logo">CTF</span> Farooq&nbsp;Ali</div>
+    <div class="who">· security explainer series</div>
+    <div class="badge">v2026.06</div>
+  </div>
+
+  <div class="grid">
+
+    <!-- 01 WHAT IT IS -->
+    <div class="card span2 c-blue">
+      <div class="chead"><div class="num">01</div><div class="ctitle">What AI-SPM is <span class="t2">— posture management for the AI stack</span></div></div>
+      <p class="lead"><b>AI Security Posture Management</b> — continuous <span class="em">visibility</span> and risk management across everything AI in your org: apps, models, agents, data, and the controls around them.</p>
+      <p style="margin-top:7px">It takes the <b>CSPM</b> (cloud) and <b>DSPM</b> (data) idea — inventory the estate, find misconfigs &amp; risky exposure, prioritize, fix — and points it at AI. <span class="em">You can't secure what you can't see.</span></p>
+      <p style="margin-top:6px"><span class="dim" style="color:#8c8c8c">A practice &amp; an industry / vendor category, not a single spec — capabilities vary by product.</span></p>
+    </div>
+
+    <!-- 02 WHAT IT INVENTORIES (attack-surface map) -->
+    <div class="card span2 c-teal">
+      <div class="chead"><div class="num">02</div><div class="ctitle">What it inventories <span class="t2">— your AI attack surface, mapped</span></div></div>
+      <svg viewBox="0 0 1000 178" width="100%" style="display:block">
+        <g font-family="Century Gothic, sans-serif">
+          <!-- central hub -->
+          <circle cx="500" cy="89" r="34" fill="#0e1310" stroke="#3AD0B0" stroke-width="1.6"/>
+          <text x="500" y="85" text-anchor="middle" fill="#3AD0B0" font-size="12" font-weight="800">AI-SPM</text>
+          <text x="500" y="99" text-anchor="middle" fill="#8c8c8c" font-size="9">inventory</text>
+          <!-- spokes (drawn on load) -->
+          <g stroke-width="1.5" fill="none">
+            <line class="spoke" x1="500" y1="89" x2="140" y2="34" stroke="#5AA9EC"/>
+            <line class="spoke" x1="500" y1="89" x2="140" y2="89" stroke="#E9BF35"/>
+            <line class="spoke" x1="500" y1="89" x2="140" y2="144" stroke="#FE9A3A"/>
+            <line class="spoke" x1="500" y1="89" x2="500" y2="20" stroke="#9B5DE5"/>
+            <line class="spoke" x1="500" y1="89" x2="860" y2="34" stroke="#81BB42"/>
+            <line class="spoke" x1="500" y1="89" x2="860" y2="89" stroke="#FF5A4D"/>
+            <line class="spoke" x1="500" y1="89" x2="860" y2="144" stroke="#3AD0B0"/>
+            <line class="spoke" x1="500" y1="89" x2="500" y2="158" stroke="#5AA9EC"/>
+          </g>
+          <!-- traveling pulse out to a node -->
+          <path id="spmPulse" d="M500,89 L860,89" fill="none" stroke="none"/>
+          <circle r="3" fill="#FF5A4D"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#spmPulse"/></animateMotion></circle>
+          <!-- node chips -->
+          <g font-size="10.5" font-weight="700">
+            <rect x="34" y="21" width="112" height="26" rx="7" fill="#0c0c0c" stroke="#5AA9EC"/><text x="90" y="38" text-anchor="middle" fill="#5AA9EC">AI apps</text>
+            <rect x="34" y="76" width="112" height="26" rx="7" fill="#0c0c0c" stroke="#E9BF35"/><text x="90" y="93" text-anchor="middle" fill="#E9BF35">models</text>
+            <rect x="34" y="131" width="112" height="26" rx="7" fill="#0c0c0c" stroke="#FE9A3A"/><text x="90" y="148" text-anchor="middle" fill="#FE9A3A">agents</text>
+            <rect x="418" y="4" width="164" height="26" rx="7" fill="#0c0c0c" stroke="#9B5DE5"/><text x="500" y="21" text-anchor="middle" fill="#9B5DE5">prompts / system prompts</text>
+            <rect x="854" y="21" width="132" height="26" rx="7" fill="#0c0c0c" stroke="#81BB42"/><text x="920" y="38" text-anchor="middle" fill="#81BB42">datasets</text>
+            <rect x="822" y="76" width="164" height="26" rx="7" fill="#0c0c0c" stroke="#FF5A4D"/><text x="904" y="93" text-anchor="middle" fill="#FF5A4D">embeddings · vector stores</text>
+            <rect x="822" y="131" width="164" height="26" rx="7" fill="#0c0c0c" stroke="#3AD0B0"/><text x="904" y="148" text-anchor="middle" fill="#3AD0B0">tool / plugin permissions</text>
+            <rect x="410" y="148" width="180" height="26" rx="7" fill="#0c0c0c" stroke="#5AA9EC"/><text x="500" y="165" text-anchor="middle" fill="#5AA9EC">security controls / guardrails</text>
+          </g>
+        </g>
+      </svg>
+      <p style="margin-top:6px"><span class="em">Every model, agent, dataset, prompt, embedding store, and tool permission — plus the controls around them — as one inventory.</span></p>
+    </div>
+
+    <!-- 03 AIBOM -->
+    <div class="card c-gold">
+      <div class="chead"><div class="num">03</div><div class="ctitle">AIBOM <span class="t2">— AI Bill of Materials</span></div></div>
+      <p style="margin-bottom:7px">The <b>ingredients list</b> for an AI system — what it's actually made of:</p>
+      <div class="chips">
+        <span class="chip">models</span><span class="chip">datasets</span><span class="chip">prompts</span><span class="chip">embeddings</span><span class="chip">tools / plugins</span><span class="chip">agents</span><span class="chip">3rd-party AI deps</span>
+      </div>
+      <p style="margin-top:9px"><span class="em">Like an SBOM, but for AI — the record AI-SPM builds and keeps current.</span></p>
+    </div>
+
+    <!-- 04 AGENT & TOOL POSTURE -->
+    <div class="card c-orange">
+      <div class="chead"><div class="num">04</div><div class="ctitle">Agent &amp; tool posture</div></div>
+      <p style="margin-bottom:6px">For each agent, know its blast radius:</p>
+      <div class="gotchas">
+        <div class="gx"><span class="ic">🤖</span><div><b>Where it lives</b> <span>— which apps &amp; environments run it.</span></div></div>
+        <div class="gx"><span class="ic">🔧</span><div><b>What it can call</b> <span>— which tools &amp; plugins it's wired to.</span></div></div>
+        <div class="gx"><span class="ic">📂</span><div><b>What it can read / do</b> <span>— data reach &amp; actions it can take.</span></div></div>
+      </div>
+      <p style="margin-top:8px"><span class="em">Least privilege — for agents.</span></p>
+    </div>
+
+    <!-- 05 RISKS IT SURFACES -->
+    <div class="card span2 c-red">
+      <div class="chead"><div class="num">05</div><div class="ctitle">Risks it surfaces <span class="t2">— what good posture flags before an attacker finds it</span></div></div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:5px 16px; margin-top:2px">
+        <div class="gx"><span class="ic">👻</span><div><b>Shadow AI</b> <span>— unsanctioned tools &amp; models nobody's tracking.</span></div></div>
+        <div class="gx"><span class="ic">🗝️</span><div><b>Over-permissioned agents &amp; tools</b> <span>— more reach than the job needs.</span></div></div>
+        <div class="gx"><span class="ic">🌐</span><div><b>Exposed models / endpoints</b> <span>— open or unauthenticated inference.</span></div></div>
+        <div class="gx"><span class="ic">📑</span><div><b>Sensitive data</b> <span>— in prompts, training sets, or vector stores.</span></div></div>
+        <div class="gx"><span class="ic">🚧</span><div><b>Missing guardrails</b> <span>— no input / output filtering or limits.</span></div></div>
+        <div class="gx"><span class="ic">📦</span><div><b>Model supply-chain risk</b> <span>— untrusted weights, deps, or sources.</span></div></div>
+      </div>
+    </div>
+
+    <!-- 06 THE LOOP (animated flow) -->
+    <div class="card span2 c-purple">
+      <div class="chead"><div class="num">06</div><div class="ctitle">The loop <span class="t2">— discover → assess → prioritize → fix / monitor</span></div></div>
+      <svg viewBox="0 0 1000 96" width="100%" style="display:block">
+        <line x1="120" y1="52" x2="880" y2="52" stroke="#2b2b2b" stroke-width="2"/>
+        <path id="spmLoop" d="M120,52 L880,52" fill="none" stroke="none"/>
+        <circle r="6" fill="#E9BF35" opacity=".28"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#spmLoop"/></animateMotion></circle>
+        <circle r="3.4" fill="#fff"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#spmLoop"/></animateMotion></circle>
+        <g font-family="Century Gothic, sans-serif">
+          <g><circle class="tlDot" cx="120" cy="52" r="6" fill="#5AA9EC" style="animation-delay:0s"/>
+            <text x="120" y="34" text-anchor="middle" fill="#5AA9EC" font-size="12" font-weight="800">1 · Discover</text>
+            <text x="120" y="76" text-anchor="middle" fill="#8c8c8c" font-size="9.5">build the inventory</text></g>
+          <g><circle class="tlDot" cx="373" cy="52" r="6" fill="#3AD0B0" style="animation-delay:.6s"/>
+            <text x="373" y="34" text-anchor="middle" fill="#3AD0B0" font-size="12" font-weight="800">2 · Assess</text>
+            <text x="373" y="76" text-anchor="middle" fill="#8c8c8c" font-size="9.5">risks · misconfigs · over-permission</text></g>
+          <g><circle class="tlDot" cx="627" cy="52" r="6" fill="#FE9A3A" style="animation-delay:1.2s"/>
+            <text x="627" y="34" text-anchor="middle" fill="#FE9A3A" font-size="12" font-weight="800">3 · Prioritize</text>
+            <text x="627" y="76" text-anchor="middle" fill="#8c8c8c" font-size="9.5">exploitable · exposed · sensitive</text></g>
+          <g><circle class="tlDot" cx="880" cy="52" r="6" fill="#81BB42" style="animation-delay:1.8s"/>
+            <text x="880" y="34" text-anchor="middle" fill="#81BB42" font-size="12" font-weight="800">4 · Fix / Monitor</text>
+            <text x="880" y="76" text-anchor="middle" fill="#8c8c8c" font-size="9.5">remediate, then keep watching</text></g>
+        </g>
+      </svg>
+      <p style="margin-top:6px"><span class="em">Continuous, not one-off — the estate changes daily, so the loop runs forever.</span></p>
+    </div>
+
+    <!-- 07 ONE DASHBOARD -->
+    <div class="card c-green">
+      <div class="chead"><div class="num">07</div><div class="ctitle">One posture dashboard</div></div>
+      <p style="margin-bottom:7px">AI joins the same view as everything else you already assess:</p>
+      <div class="steps">
+        <span class="step">cloud</span><span class="arrow">·</span>
+        <span class="step">SaaS</span><span class="arrow">·</span>
+        <span class="step">data</span><span class="arrow">·</span>
+        <span class="step">identity</span><span class="arrow">+</span>
+        <span class="step" style="border-color:#243b18;color:#81BB42">AI</span>
+      </div>
+      <p style="margin-top:9px"><span class="em">AI becomes one more thing you continuously assess — not a blind spot off to the side.</span></p>
+    </div>
+
+    <!-- 08 HOW IT RELATES -->
+    <div class="card c-blue">
+      <div class="chead"><div class="num">08</div><div class="ctitle">How it relates</div></div>
+      <table>
+        <tr><th>Framework</th><th>AI-SPM's role</th></tr>
+        <tr><td class="k">NIST AI RMF</td><td class="win">feeds Govern / Map — inventory + context</td></tr>
+        <tr><td class="k">DSPM</td><td class="win">complements it — the data angle</td></tr>
+        <tr><td class="k">CSPM</td><td class="win">complements it — the cloud angle</td></tr>
+        <tr><td class="k">AI governance</td><td class="win">supplies the evidence</td></tr>
+      </table>
+    </div>
+
+    <!-- 09 WATCH OUT -->
+    <div class="card span2 c-red">
+      <div class="chead"><div class="num">09</div><div class="ctitle">Watch out</div></div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:5px 16px; margin-top:2px">
+        <div class="gx"><span class="ic">⚡</span><div><b>AI sprawls fast</b> <span>— every team ships an agent; the inventory is never "done".</span></div></div>
+        <div class="gx"><span class="ic">🕳️</span><div><b>New leak paths</b> <span>— prompts &amp; vector stores are data exfil routes classic tools miss.</span></div></div>
+        <div class="gx"><span class="ic">🔑</span><div><b>Tool permissions are the new IAM</b> <span>— what an agent may call is now an access decision.</span></div></div>
+        <div class="gx"><span class="ic">🏷️</span><div><b>"AI-SPM" is a market category</b> <span>— capabilities vary by vendor; check what a product actually covers.</span></div></div>
+      </div>
+    </div>
+
+    <!-- 10 TAKEAWAY -->
+    <div class="card span2 takeaway c-gold">
+      <div class="chead"><div class="num">10</div><div class="ctitle">The takeaway</div></div>
+      <div class="big">AI-SPM is <span class="em">visibility first</span> — inventory every model, agent, dataset, and prompt, then <span class="em">continuously assess and shrink the AI attack surface</span>.</div>
+      <div class="flow2">
+        <span class="step">Discover</span><span class="arrow">→</span>
+        <span class="step">Assess</span><span class="arrow">→</span>
+        <span class="step">Prioritize</span><span class="arrow">→</span>
+        <span class="step">Fix &amp; monitor</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="foot">
+    <div class="brandmark" style="font-size:13px"><span class="logo" style="width:22px;height:22px;font-size:11px;border-radius:5px">CTF</span> Farooq&nbsp;Ali</div>
+    <div class="sig" style="margin-left:auto"><a href="https://ctf.guru" style="color:var(--gold);text-decoration:none;font-weight:700">ctf.guru</a> · security explainer series · 2026</div>
+  </div>
+
+</div>
+</body>
+</html>

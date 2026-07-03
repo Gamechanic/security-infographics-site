@@ -116,11 +116,11 @@ const GROUPS = [
     { title:'CVE → CWE → CAPEC → ATT&CK' },
   ]},
   { id:'aigov', name:'AI Security &amp; Governance', ac:'var(--gold)', desc:'Technical + governance controls for GenAI and agents.', items:[
-    { title:'NIST AI RMF' },
-    { title:'EU AI Act — Risk Tiers' },
-    { title:'ISO/IEC 42001' },
-    { title:'AI Red Teaming' },
-    { title:'AI-SPM — AI Posture', also:'Posture' },
+    { title:'NIST AI RMF', slug:'nist-ai-rmf', live:true },
+    { title:'EU AI Act — Risk Tiers', slug:'eu-ai-act', live:true },
+    { title:'ISO/IEC 42001', slug:'iso-42001', live:true },
+    { title:'AI Red Teaming', slug:'ai-red-teaming', live:true },
+    { title:'AI-SPM — AI Posture', slug:'ai-spm', live:true, also:'Posture' },
     { title:'Prompt Injection', slug:'prompt-injection', live:true, also:'OWASP' },
   ]},
   { id:'secops', name:'SecOps &amp; Resilience', ac:'var(--orange)', desc:'Detect, respond, recover — because controls fail.', items:[
@@ -136,7 +136,7 @@ function cardHTML(it){
   if(it.live){
     return '<div class="card">'
       + '<a class="cardlink" href="'+it.slug+'-poster.html">'
-      + '<div class="thumb"><img src="'+it.slug+'-poster.png" alt=""><span class="flag live">Live</span></div>'
+      + '<div class="thumb"><img src="'+it.slug+'-poster.png" alt=""></div>'
       + '<div class="cb"><div class="ct">'+it.title+'</div></div></a>'
       + '<div class="crow"><a class="open" href="'+it.slug+'-poster.html">Open ↗</a>'
       + '<span class="dl"><a href="'+it.slug+'-poster.gif" download>GIF</a> · <a href="'+it.slug+'-poster.png" download>PNG</a></span></div>'

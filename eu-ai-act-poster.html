@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EU AI Act — Risk Tiers &amp; Timeline</title>
+<link rel="stylesheet" href="poster.css">
+</head>
+<body>
+<div class="back-bar"><a href="index.html">← Gallery</a></div>
+<div class="dl-bar">⬇ <a href="eu-ai-act-poster.gif" download>GIF</a> · <a href="eu-ai-act-poster.png" download>PNG</a></div>
+<div class="poster">
+
+  <!-- ================= MASTHEAD ================= -->
+  <div class="kicker">Security · field guide</div>
+  <h1>EU AI <span class="b">ACT</span></h1>
+  <div class="sub">The EU's <b>risk-based</b> AI law — the more risk a system poses, the more obligations it carries <span class="dim">(in force Aug 2024; applies in phases — verify dates against the current consolidated text)</span></div>
+  <div class="byline">
+    <div class="brandmark"><span class="logo">CTF</span> Farooq&nbsp;Ali</div>
+    <div class="who">· security explainer series</div>
+    <div class="badge">v2026.06</div>
+  </div>
+
+  <div class="grid">
+
+    <!-- 01 WHAT IT IS -->
+    <div class="card c-blue">
+      <div class="chead"><div class="num">01</div><div class="ctitle">What it is</div></div>
+      <p>The world's first comprehensive, <b>risk-based</b> AI law — Regulation (EU) 2024/1689. It sorts AI systems into tiers, and the higher the risk, the heavier the duties. <b>Entered into force Aug 2024</b>; obligations switch on in phases.</p>
+      <p style="margin-top:7px"><span class="em">Not one rule for all AI — the tier decides what you must do.</span></p>
+    </div>
+
+    <!-- 02 EXTRATERRITORIAL -->
+    <div class="card c-teal">
+      <div class="chead"><div class="num">02</div><div class="ctitle">Who it reaches</div></div>
+      <div class="gotchas">
+        <div class="gx"><span class="ic">🌍</span><div><b>Extraterritorial</b> <span>— applies wherever you're based if your AI's <b>output is used in the EU</b>.</span></div></div>
+        <div class="gx"><span class="ic">🏗️</span><div><b>Providers &amp; deployers</b> <span>— building, importing, or putting an AI system into use both count.</span></div></div>
+      </div>
+      <p style="margin-top:8px"><span class="dim" style="color:#8c8c8c">Being outside the EU is not an exemption — the EU market is the trigger.</span></p>
+    </div>
+
+    <!-- 03 THE FOUR RISK TIERS — PYRAMID -->
+    <div class="card span2 c-gold">
+      <div class="chead"><div class="num">03</div><div class="ctitle">The four risk tiers <span class="t2">— top = most restricted · the vast majority of AI is minimal-risk</span></div></div>
+      <svg viewBox="0 0 1000 250" width="100%" style="display:block">
+        <g font-family="Century Gothic, sans-serif" font-weight="800">
+          <!-- UNACCEPTABLE (apex) -->
+          <path d="M500,14 L590,64 L410,64 Z" fill="#1a0a0a" stroke="#FF5A4D" stroke-width="1.4"/>
+          <text x="500" y="52" text-anchor="middle" fill="#FF5A4D" font-size="13">UNACCEPTABLE</text>
+          <!-- HIGH -->
+          <path d="M600,72 L680,132 L320,132 L400,72 Z" fill="#1a1305" stroke="#E9BF35" stroke-width="1.4"/>
+          <text x="500" y="108" text-anchor="middle" fill="#E9BF35" font-size="14">HIGH</text>
+          <!-- LIMITED -->
+          <path d="M690,140 L770,200 L230,200 L310,140 Z" fill="#101725" stroke="#5AA9EC" stroke-width="1.4"/>
+          <text x="500" y="176" text-anchor="middle" fill="#5AA9EC" font-size="14">LIMITED &nbsp;·&nbsp; transparency</text>
+          <!-- MINIMAL (base) -->
+          <path d="M780,208 L860,240 L140,240 L220,208 Z" fill="#0d1305" stroke="#81BB42" stroke-width="1.4"/>
+          <text x="500" y="228" text-anchor="middle" fill="#81BB42" font-size="14">MINIMAL &nbsp;·&nbsp; the vast majority — no new obligations</text>
+        </g>
+        <g font-family="Century Gothic, sans-serif" font-size="11">
+          <!-- travelling dot climbing the pyramid spine -->
+          <path id="pyrSpine" d="M500,236 L500,20" fill="none" stroke="none"/>
+          <circle r="3.4" fill="#fff"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#pyrSpine"/></animateMotion></circle>
+          <!-- right-side callouts -->
+          <text x="700" y="42" fill="#FF5A4D" font-weight="800" font-size="11">BANNED</text>
+          <text x="700" y="57" fill="#bdbdbd">social scoring · manipulation · scraping faces</text>
+          <text x="720" y="100" fill="#E9BF35" font-weight="800" font-size="11">HEAVY DUTIES</text>
+          <text x="720" y="115" fill="#bdbdbd">hiring · credit · biometrics · medical · infra</text>
+          <text x="790" y="168" fill="#5AA9EC" font-weight="800" font-size="11">DISCLOSE</text>
+          <text x="790" y="183" fill="#bdbdbd">chatbots · deepfakes · GenAI output</text>
+          <!-- left-side callouts -->
+          <text x="300" y="42" text-anchor="end" fill="#8c8c8c">most restricted ↑</text>
+          <text x="180" y="228" text-anchor="end" fill="#8c8c8c">least ↓</text>
+        </g>
+      </svg>
+      <p style="margin-top:6px" class="lead">Classify every system by tier first — that single call decides whether it is <b>banned</b>, <b>heavily regulated</b>, <b>must disclose</b>, or free of new duties.</p>
+    </div>
+
+    <!-- 04 UNACCEPTABLE -->
+    <div class="card c-red">
+      <div class="chead"><div class="num">04</div><div class="ctitle">Unacceptable · banned</div></div>
+      <p style="margin-bottom:7px">A short list of AI uses judged an unacceptable threat to rights — <b>prohibited outright</b>:</p>
+      <div class="gotchas">
+        <div class="gx"><span class="ic">🚫</span><div><b>Social scoring</b> <span>— rating people by behaviour for unrelated decisions.</span></div></div>
+        <div class="gx"><span class="ic">🧠</span><div><b>Subliminal manipulation</b> <span>— exploiting vulnerabilities to distort behaviour.</span></div></div>
+        <div class="gx"><span class="ic">📸</span><div><b>Untargeted face scraping</b> <span>· <b>emotion inference</b> at work / school.</span></div></div>
+        <div class="gx"><span class="ic">👁️</span><div><b>Real-time public biometric ID</b> <span>— by police, save narrow exceptions.</span></div></div>
+      </div>
+    </div>
+
+    <!-- 05 HIGH -->
+    <div class="card c-orange">
+      <div class="chead"><div class="num">05</div><div class="ctitle">High · heavy obligations</div></div>
+      <p style="margin-bottom:7px">Allowed, but only with a full compliance programme. Covers <b>hiring, credit scoring, biometrics, critical infrastructure, medical devices</b>.</p>
+      <div class="chips">
+        <span class="chip">risk management</span><span class="chip">data governance</span><span class="chip">technical docs</span><span class="chip">human oversight</span><span class="chip">accuracy · robustness</span><span class="chip">conformity assessment</span>
+      </div>
+      <p style="margin-top:9px"><span class="em">Prove it before you ship — and keep proving it in use.</span></p>
+    </div>
+
+    <!-- 06 TIMELINE OF APPLICATION -->
+    <div class="card span2 c-purple">
+      <div class="chead"><div class="num">06</div><div class="ctitle">Timeline of application <span class="t2">— phased in · <b>dates being amended</b> (2026 "Digital Omnibus")</span></div></div>
+      <svg viewBox="0 0 1000 176" width="100%" style="display:block">
+        <line x1="80" y1="92" x2="920" y2="92" stroke="#2b2b2b" stroke-width="2"/>
+        <path id="euTl" d="M80,92 L920,92" fill="none" stroke="none"/>
+        <circle r="6" fill="#E9BF35" opacity=".28"><animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#euTl"/></animateMotion></circle>
+        <circle r="3.4" fill="#fff"><animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#euTl"/></animateMotion></circle>
+        <g font-family="Century Gothic, sans-serif">
+          <g><circle class="tlDot" cx="130" cy="92" r="6" fill="#FF5A4D" style="animation-delay:0s"/>
+            <text x="130" y="44" text-anchor="middle" fill="#FF5A4D" font-size="12" font-weight="800">2 Feb 2025</text>
+            <text x="130" y="118" text-anchor="middle" fill="#bdbdbd" font-size="10">Prohibited practices</text>
+            <text x="130" y="132" text-anchor="middle" fill="#8c8c8c" font-size="9.5">+ AI-literacy duties</text></g>
+          <g><circle class="tlDot" cx="395" cy="92" r="6" fill="#3AD0B0" style="animation-delay:.6s"/>
+            <text x="395" y="44" text-anchor="middle" fill="#3AD0B0" font-size="12" font-weight="800">2 Aug 2025</text>
+            <text x="395" y="118" text-anchor="middle" fill="#bdbdbd" font-size="10">GPAI model obligations</text>
+            <text x="395" y="132" text-anchor="middle" fill="#8c8c8c" font-size="9.5">+ governance bodies</text></g>
+          <g><circle class="tlDot" cx="660" cy="92" r="6" fill="#E9BF35" style="animation-delay:1.2s"/>
+            <text x="660" y="44" text-anchor="middle" fill="#E9BF35" font-size="12" font-weight="800">2 Dec 2027</text>
+            <text x="660" y="118" text-anchor="middle" fill="#bdbdbd" font-size="10">High-risk · Annex III</text>
+            <text x="660" y="132" text-anchor="middle" fill="#8c8c8c" font-size="9.5">standalone (deferred)</text></g>
+          <g><circle class="tlDot" cx="900" cy="92" r="6" fill="#9B5DE5" style="animation-delay:1.8s"/>
+            <text x="900" y="44" text-anchor="middle" fill="#9B5DE5" font-size="12" font-weight="800">2 Aug 2028</text>
+            <text x="900" y="118" text-anchor="middle" fill="#bdbdbd" font-size="10">Product-embedded</text>
+            <text x="900" y="132" text-anchor="middle" fill="#8c8c8c" font-size="9.5">high-risk (Annex I)</text></g>
+        </g>
+      </svg>
+      <p style="margin-top:6px"><span class="em">Bans land first, then GPAI, then high-risk — the tail is shifting, so always check the live text.</span></p>
+    </div>
+
+    <!-- 07 LIMITED -->
+    <div class="card c-blue">
+      <div class="chead"><div class="num">07</div><div class="ctitle">Limited · transparency</div></div>
+      <p style="margin-bottom:7px">Lower-risk systems carry one core duty: <b>tell people it's AI</b>.</p>
+      <div class="steps">
+        <span class="step" style="border-color:#1e3a52;color:#5AA9EC">chatbots</span><span class="arrow" style="color:#8c8c8c">·</span>
+        <span class="step" style="border-color:#1e3a52;color:#5AA9EC">deepfakes</span><span class="arrow" style="color:#8c8c8c">·</span>
+        <span class="step" style="border-color:#1e3a52;color:#5AA9EC">GenAI output</span>
+      </div>
+      <p style="margin-top:9px"><span class="em">Disclose that content is AI-generated — and that they're talking to a machine.</span></p>
+    </div>
+
+    <!-- 08 MINIMAL -->
+    <div class="card c-green">
+      <div class="chead"><div class="num">08</div><div class="ctitle">Minimal · everything else</div></div>
+      <p style="margin-bottom:7px">The <b>vast majority</b> of AI — spam filters, recommenders, game AI — falls here.</p>
+      <div class="gotchas">
+        <div class="gx"><span class="ic">✅</span><div><b>No new obligations</b> <span>— existing law (privacy, consumer, safety) still applies.</span></div></div>
+      </div>
+      <p style="margin-top:8px"><span class="dim" style="color:#8c8c8c">Voluntary codes of conduct are encouraged, not required.</span></p>
+    </div>
+
+    <!-- 09 GPAI -->
+    <div class="card span2 c-teal">
+      <div class="chead"><div class="num">09</div><div class="ctitle">GPAI — a separate track <span class="t2">— general-purpose models sit alongside the risk tiers</span></div></div>
+      <div class="trio">
+        <div class="mini"><h4 style="color:#3AD0B0">🧩 All GPAI</h4><p>Technical documentation · instructions for downstream use · <b>copyright compliance</b> · a public summary of training data.</p></div>
+        <div class="mini"><h4 style="color:#FF5A4D">⚡ Systemic risk</h4><p>Trained with <b>&gt; 10²⁵ FLOPs</b> of compute. Adds: model evaluations · adversarial testing.</p></div>
+        <div class="mini"><h4 style="color:#E9BF35">🛡️ &amp; more</h4><p>Systemic-risk models also owe <b>serious-incident reporting</b> and <b>cybersecurity protections</b>.</p></div>
+      </div>
+      <p style="margin-top:9px"><span class="em">"GPAI" is its own duty set — a model can be GPAI and be built into a high-risk system.</span></p>
+    </div>
+
+    <!-- 10 PENALTIES + GOTCHAS -->
+    <div class="card c-gold">
+      <div class="chead"><div class="num">10</div><div class="ctitle">Penalties</div></div>
+      <p style="margin-bottom:7px">Fines scale to the breach — the top band is reserved for the banned uses:</p>
+      <table>
+        <tr><th>Violation</th><th>Up to</th></tr>
+        <tr><td class="k">Prohibited practices</td><td class="no">€35M or 7% turnover</td></tr>
+        <tr><td class="k">Other obligations</td><td>lower bands apply</td></tr>
+      </table>
+      <p style="margin-top:8px"><span class="dim" style="color:#8c8c8c">7% is of <b>global</b> annual turnover — whichever figure is higher.</span></p>
+    </div>
+
+    <!-- 11 WATCH OUT -->
+    <div class="card c-red">
+      <div class="chead"><div class="num">11</div><div class="ctitle">Watch out</div></div>
+      <div class="gotchas">
+        <div class="gx"><span class="ic">🕰️</span><div><b>Dates are shifting</b> <span>— the timeline is being amended; verify against the current consolidated text.</span></div></div>
+        <div class="gx"><span class="ic">🧩</span><div><b>GPAI ≠ high-risk</b> <span>— a distinct track; a system can be caught by both.</span></div></div>
+        <div class="gx"><span class="ic">💬</span><div><b>"Low-risk" still discloses</b> <span>— transparency duties reach chatbots &amp; deepfakes too.</span></div></div>
+      </div>
+    </div>
+
+    <!-- 12 TAKEAWAY -->
+    <div class="card span2 takeaway c-gold">
+      <div class="chead"><div class="num">12</div><div class="ctitle">The takeaway</div></div>
+      <div class="big">Classify <span class="em">every AI system by risk tier</span>, then meet that tier's duties — <span class="em">unacceptable is banned, high is heavily regulated, limited must disclose</span>.</div>
+      <div class="flow2">
+        <span class="step">Inventory</span><span class="arrow">→</span>
+        <span class="step">Classify by tier</span><span class="arrow">→</span>
+        <span class="step">Meet the duties</span><span class="arrow">→</span>
+        <span class="step">Keep documentation</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="foot">
+    <div class="brandmark" style="font-size:13px"><span class="logo" style="width:22px;height:22px;font-size:11px;border-radius:5px">CTF</span> Farooq&nbsp;Ali</div>
+    <div class="sig" style="margin-left:auto"><a href="https://ctf.guru" style="color:var(--gold);text-decoration:none;font-weight:700">ctf.guru</a> · security explainer series · 2026</div>
+  </div>
+
+</div>
+</body>
+</html>
